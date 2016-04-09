@@ -36,6 +36,7 @@ public class LargestPrimeFactor {
 			if(n%i == 0){			
 				factors.add(i);
 				n = n/i;
+				i = i - 1;
 			}
 			i= i+1;
 			if(i*i>arg){
