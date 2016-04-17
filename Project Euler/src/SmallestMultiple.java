@@ -27,9 +27,8 @@ public class SmallestMultiple {
 	
 	public static void getPrimeCount(int arg, int[] numberofprimes){
 		//Variables
-		LargestPrimeFactor prime = new LargestPrimeFactor();
 		int count = 0;
-		List<Long>primes= new ArrayList<Long>(prime.simpleFactor(arg));
+		List<Long>primes= LargestPrimeFactor.simpleFactor(arg);
 		
 		//iterate through the range of primes
 		for(int i = 0; i<PRIMES.length; i++){
